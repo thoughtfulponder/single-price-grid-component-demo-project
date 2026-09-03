@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+body {
+    background-color: hsl(204, 43%, 93%);
+    font-size: 16px;
+    font-family: "Karla", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 300px;
+    display: grid;
+}
+
+.grid-box {
+    padding: 20px;
+}
+.first {
+    background-color: white;
+}
+.first .heading {
+    color: hsl(179, 62%, 43%);
+}
+
+.first .sub-heading {
+   color: hsl(71, 73%, 54%);
+}
+
+.first .message {
+    color: hsl(218, 22%, 67%);
+}
+
+.heading, .sub-heading, .message, button {
+    margin-bottom: 10px;
+}
+
+.heading {
+    font-size: 1.2rem;
+}
+
+.second {
+    background-color: hsl(179, 62%, 43%);
+    color: white;
+}
+
+.second button {
+    background-color: hsl(71, 73%, 54%);
+    color: white;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 5px;
+}
+
+.third {
+    color: white;
+    background-color: hsl(179, 47%, 52%);
+}
+
+.message {
+    line-height: 1.5;
+}
+
+@media (min-width: 700px) {
+    .container {
+        width: 600px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        
+    }
+
+    .first {
+        grid-area: 1 / span 2;
+    }
+}
