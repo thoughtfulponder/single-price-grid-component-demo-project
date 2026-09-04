@@ -80,6 +80,11 @@ body {
 
 .message {
     line-height: 1.5;
+    max-width: 60ch;
+}
+
+.third .message {
+    max-width: 22ch;
 }
 
 @media (min-width: 700px) {
