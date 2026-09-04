@@ -56,9 +56,21 @@ body {
 .second button {
     background-color: hsl(71, 73%, 54%);
     color: white;
-    padding: 10px 40px;
+    padding: 10px 100px;
     border: none;
     border-radius: 5px;
+}
+
+.second .sub-heading {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.second .sub-heading span {
+    font-size: 1rem;
+    color: hsl(179, 46%, 73%);
+    padding: 10px;
+    margin-bottom: 150px;
 }
 
 .third {
@@ -75,10 +87,19 @@ body {
         width: 600px;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        
+        border-radius: 15px;
     }
 
     .first {
         grid-area: 1 / span 2;
+    }
+
+    .first .heading {
+        margin-bottom: 20px;
+    }
+
+    .second .heading,
+    .second .message {
+        margin-bottom: 20px;
     }
 }
